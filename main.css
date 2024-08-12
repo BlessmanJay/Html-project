@@ -1,0 +1,45 @@
+/* style */
+
+div {
+    margin: 5px;
+    height: 150px;
+    width: 150px;
+    background: red;
+}
+
+.animation1:hover {
+        background-color: blue;
+        font-size: larger;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: right;
+        font-style: italic;
+        animation-name: swing;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-direction: alternate;
+}
+
+@keyframes swing {
+    2% {transform: translate(30px);}
+    75% {transform: translate(100px);}
+}
+
+.animation2:hover {
+        background-color: yellow;
+        font-size: larger;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-style: italic;
+        color: green;
+        animation-name: sided;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-direction: alternate;
+}
+
+@keyframes sided {
+    2% {transform: translate(30px);}
+    75% {transform: translate(100px);}
+}
